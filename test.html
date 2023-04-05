@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<style>
+    .main {
+  background:#000;
+  height: 100vh;
+}
+
+#load {
+  position:absolute;
+  width:600px;
+  height:36px;
+  left:50%;
+  top:50%;
+  margin-left:-300px;
+  overflow:visible;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 2s linear infinite;
+  -o-animation:move 2s linear infinite;
+  -moz-animation:move 2s linear infinite;
+  -webkit-animation:move 2s linear infinite;
+  transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  color:#35C4F0;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+  -o-animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+  -o-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+}
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+  -o-animation-delay:0.6s;
+  -moz-animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+}
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+  -o-animation-delay:0.8s;
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+}
+#load div:nth-child(6) {
+  animation-delay:1s;
+  -o-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+  -o-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+}
+
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+	35% {
+		left: 41%; 
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		-moz-transform:rotate(0deg); 
+		-webkit-transform:rotate(0deg); 
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		-moz-transform:rotate(-180deg); 
+		-webkit-transform:rotate(-180deg); 
+		-o-transform:rotate(-180deg); 
+		transform:rotate(-180deg);
+		opacity:0;
+	}
+}
+
+@-moz-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		-moz-transform:rotate(0deg); 
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		-moz-transform:rotate(0deg); 
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		-moz-transform:rotate(-180deg); 
+		transform:rotate(-180deg);
+		opacity:0;
+	}
+}
+
+@-webkit-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		-webkit-transform:rotate(0deg); 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		-webkit-transform:rotate(0deg); 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%;
+		-webkit-transform:rotate(-180deg); 
+		transform:rotate(-180deg); 
+		opacity:0;
+	}
+}
+
+@-o-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		-o-transform:rotate(0deg); 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		-o-transform:rotate(0deg); 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		-o-transform:rotate(-180deg); 
+		transform:rotate(-180deg); 
+		opacity:0;
+	}
+}
+
+body{
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrap{
+
+}
+
+.table{
+	display: grid;
+	grid-template-rows: auto repeat(5, 1fr);
+	row-gap: 5px;
+	width: 80%;
+	margin: 50px auto;
+	overflow-x: auto;
+	border: 1px solid #e9e9e9;
+	box-shadow: 5px 5px 10px #52525248;
+}
+.row{
+	display: grid;
+	grid-template-columns: 100px 100px 200px 100px auto;
+	background-color: #fff;
+	box-shadow: 4px 4px 2px #5a5a5a4f;
+	align-items: center;
+	justify-items: center;
+	column-gap: 10px;
+	padding: 0 20px;
+}
+.item{
+	padding:1rem;
+	font-weight: 600;
+}
+
+.head .item{
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+.head{
+	background-color: #1D252C;
+    color: #E7E7E6;
+}
+.item img{
+	height: 64px;
+	max-width: 150px;
+	border-radius: 4px;
+}
+.row .detail{
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-align: justify;
+	padding-left: 2rem; 
+	color: #1D252C;
+}
+.detail-head{
+	justify-self: baseline;
+	padding-left: 2rem;
+}
+.brand{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+
+}
+.brand-name{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.fa-star.yellow{
+	color: #ddc228;
+}
+.brand-content{
+	text-align: center;
+}
+.fa-angles-up{
+	color: #57ec1d;
+}
+.fa-angles-down{
+	color: #ec1d1d;
+}
+.rank{
+	background-color: #1D252C;
+    color: #E7E7E6;
+	border-radius: 4px;
+}
+</style>
+	<body>
+		<!-- <div class="main">
+            <div id="load">
+                <div>G</div>
+                <div>N</div>
+                <div>I</div>
+                <div>D</div>
+                <div>A</div>
+                <div>O</div>
+                <div>L</div>
+            </div>
+        </div> -->
+		<div class="wrap">
+			<div class="table">
+				<div class="row head">
+					<div class="item">Rank</div>
+					<div class="item">Change</div>
+					<div class="item">Brand</div>
+					<div class="item">Category</div>
+					<div class="item detail-head">Details</div>
+				</div>
+				<div class="row">
+					<div class="item rank">1</div>
+					<div class="item">--</div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/Luv_Me_Hair_kkbs6w.png"
+							alt="" srcset="">
+						<div class="brand-content">
+							<div class="brand-name">Luv Me Hair</div>
+							<div class="star-rating">
+								<i class="fa-solid fa-star yellow"></i>
+								<i class="fa-solid fa-star yellow"></i>
+								<i class="fa-solid fa-star yellow"></i>
+								<i class="fa-solid fa-star yellow"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">2</div>
+					<div class="item">--</div>
+					<div class="item brand">
+						<img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/lily_and_fox_ncykjc.png"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Lily and Fox</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+					</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">3</div>
+					<div class="item">1 <i class="fa-solid fa-angles-down"></i></div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/kosas_rohvuv.jpg"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Kosas</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">4</div>
+					<div class="item">2 <i class="fa-solid fa-angles-up"></i></div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609145/bluebird%20logos/k18_logo_jda2jx.webp"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">K18</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">5</div>
+					<div class="item">--</div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/elta_md_tix5i5.svg"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Elta MD</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">6</div>
+					<div class="item">-</div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/haus_labs_unnrg5.jpg"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Elta MD</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+					</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">7</div>
+					<div class="item">-</div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/Fenty_Beauty_lcmgky.jpg"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Elta MD</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+				<div class="row">
+					<div class="item rank">8</div>
+					<div class="item">-</div>
+					<div class="item brand"><img
+							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/sol_de_janeiro_hps9ft.png"
+							alt="" srcset="">
+							<div class="brand-content">
+								<div class="brand-name">Elta MD</div>
+								<div class="star-rating">
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star yellow"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+							</div>
+						</div>
+					<div class="item">BEAUTY</div>
+					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
+						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
+						dignissimos exercitationem id facere sunt ut.</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
