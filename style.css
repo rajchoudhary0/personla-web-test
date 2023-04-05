@@ -638,3 +638,9 @@ footer p {
     top: 0;
     left: 0; */
   }
+
+  .icon{
+    display: flex;
+    justify-content:center;
+    gap:5px;
+  }
