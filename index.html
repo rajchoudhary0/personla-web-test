@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="magic"></div>
+        <!-- <div id="spinner"></div> -->
+        <div id="progress"></div>
+        <div id="scroll"></div>
+        <div id="percent"></div>
+        <header id="main-header">
+            <nav>
+                <div class="logo magic-hover">
+                    <h4>The Nav</h4>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="LinkClick()" class="magic-hover">Home</a></li>
+                    <li><a href="#content" onclick="LinkClick()"
+                            class="magic-hover magnet">Content</a></li>
+                    <li><a href="#services" onclick="LinkClick()"
+                            class="magic-hover">Services</a></li>
+                    <li><a href="new.html" onclick="LinkClick()"
+                            class="magic-hover">Trials</a></li>
+                </ul>
+                <div class="burger magic-hover magnet-mouse">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+        <div id="particles-js"></div>
+        <div class="scroll-container">
+            <section class="showcase" id="showcase">
+                <div class="container">
+                    <h2 class="head-content">I am <span class="mov"> </span>
+                    </h2>
+                </div>
+            </section>
+            <section class="content" id="content">
+                <p class="text-head">Here is your Content <span>→</span></p>
+                <p class="text-para">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Debitis laboriosam veritatis, repudiandae
+                    veniam deserunt quo doloribus perferendis asperiores commodi
+                    sit
+                    reprehenderit minus ad quas iure dolorum quidem laborum at
+                    vero.</p>
+            </section>
+            <section class="gsap-anim">
+                <div class="anim-box">
+                    <a href="" class="mouse-follow magnet-mouse">Click here</a>
+                </div>
+            </section>
+            <section id="services">
+                <div class="main-box" id="main-box">
+                    <div class="box" id="box" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.3">
+                        <h3>Hello world</h3>
+                        <p class="small"> possimus neque fugiat? Nostrum a
+                            magnam
+                            dicta expedita rerum, quis quaerat, autem hic
+                            voluptatum
+                            temporibus quod blanditiis! Voluptas, veritatis?</p>
+                    </div>
+                    <div class="box" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.3">
+                        <h3>Hello world</h3>
+                        <p class="small">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Cumque labore minima possimus
+                            neque
+                            fugiat? Nostrum a magnam dicta expedita rerum, quis
+                            quaerat, autem hic voluptatum temporibus quod
+                            blanditiis! Voluptas, veritatis?</p>
+                    </div>
+                    <div class="box" data-tilt data-tilt-glare
+                        data-tilt-max-glare="0.3">
+                        <h3>Hello world</h3>
+                        <p class="small">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Cumque labore minima possimus
+                            neque
+                            fugiat? Nostrum a magnam dicta expedita rerum, quis
+                            quaerat, autem hic voluptatum temporibus quo d
+                            blanditiis! Voluptas, veritatis?</p>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </section>
+
+        </div>
+        <div class="bottom-nav">
+            <a href="sass/index.html" target="_blank">Sass</a>
+            <a href="new.html" target="_blank">Trials</a>
+            <a href="landing.html" target="_blank">Curved</a>
+        </div>
+        <div class="newsletter">
+            <form action="" class="bottom-input">
+                <input type="email" name="" class="email-input" id="">
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </div>
+        <footer class="bottom">
+            <p>All Right Reserved &copy; Made with ❤️</p>
+        </footer>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js/particles.min.js"></script>
+    <script
+        src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+        integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="tilt.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // gsap.from(".box", {
+        //     scrollTrigger: {
+        //     trigger: ".main-box", // start the animation when ".box" enters the viewport (once)
+        //     start: "Top Center",
+        //     scrub:1
+        // },
+        //     left: "-40%",
+        //     opacity: 0.8
+        // });
+    </script>
+    <script>
+        options = {
+        "outerStyle": "disable",
+        "hoverEffect": "pointer-overlay",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 60,
+        "outerHeight": 60
+  }
+  magicMouse(options);
+    </script>
+    <script>
+        ScrollReveal({ 
+            reset: true 
+        });
+        ScrollReveal().reveal('.showcase');
+        // ScrollReveal().reveal('.content', { delay: 500 });
+        // ScrollReveal().reveal('.main-box', { delay: 500 });
+        ScrollReveal().reveal('.bottom-nav', { delay: 500 });
+    </script>
+    <script>
+         var typed = new Typed(".mov",{
+        strings: [,  "Rajendra","a UI UX Designer","a Web Developer"] ,
+        typeSpeed: 0,
+        backSpeed: 0,
+        smartBackspace: true, // this is a default
+        loop: true,
+        cursorChar: '',
+    })
+    </script>
+    <script>
+        const spinner = new mojs.Shape({
+        parent:           '#spinner',
+        shape:            'circle',
+        stroke:           '#FC46AD',
+        strokeDasharray:  '125, 125',
+        strokeDashoffset: {'0': '-125'},
+        strokeWidth:      4,
+        fill:             'none',
+        left:             '50%',
+        top:              '50%',
+        rotate:            {'-90': '270'},
+        radius:           20,
+        isShowStart:      true,
+        duration:         2000,
+        easing:           'back.in',
+        })
+        .then({
+        rotate:            {'-90': '270'},
+        strokeDashoffset: {'-125': '-250'},
+        duration:         3000,
+        easing:           'cubic.out',
+        });
+
+        spinner.play();
+    </script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+            direction: 'vertical', // vertical, horizontal
+            gestureDirection: 'vertical', // vertical, horizontal, both
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        })
+
+        //get scroll value
+        // lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+        // console.log({ scroll, limit, velocity, direction, progress })
+        // })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</html>

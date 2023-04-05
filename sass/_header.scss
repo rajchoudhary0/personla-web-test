@@ -1,0 +1,44 @@
+// @mixin flexCenter($direction, $bg) {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     height: 100vh;
+//     flex-direction: $direction;
+//     background: $bg;
+// }
+@mixin btnStyle() {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: unset;
+    transition: 0.1s all;
+    &:hover {
+        cursor: pointer;
+        padding: 8px 18px;
+    }
+}
+
+div {
+    // @include flexCenter(column, #333);
+    color: $BtnColor;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: lightblue;
+    scroll-snap-align: start;
+    button {
+        background: $btnBg;
+        color: $BtnColor;
+        @include btnStyle();
+        &:hover {
+            background: transparent;
+            border: 2px solid #fff;
+        }
+    }
+    h1 {
+        font-size: 2em;
+    }
+}

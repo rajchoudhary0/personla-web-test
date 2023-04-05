@@ -1,0 +1,60 @@
+div, .contact {
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background: lightblue;
+  scroll-snap-align: start;
+}
+div button, .contact button {
+  background: green;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: unset;
+  transition: 0.1s all;
+}
+div button:hover, .contact button:hover {
+  cursor: pointer;
+  padding: 8px 18px;
+}
+div button:hover, .contact button:hover {
+  background: transparent;
+  border: 2px solid #fff;
+}
+div h1, .contact h1 {
+  font-size: 2em;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+button {
+  background: green;
+}
+
+.contact {
+  background: lightcoral;
+}
+.contact button {
+  color: #fff;
+}
+.contact button:hover {
+  background: transparent;
+  color: green;
+  border: 10px solid green;
+}/*# sourceMappingURL=style.css.map */

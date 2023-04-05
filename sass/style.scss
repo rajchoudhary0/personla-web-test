@@ -1,0 +1,33 @@
+@import "var";
+@import "header";
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+button {
+    background: $btnBg;
+}
+
+.contact {
+    @extend div;
+    background: lightcoral;
+    // @include flexCenter(row, #f1f3f1);
+    button {
+        // @include btnStyle();
+        color: $BtnColor;
+        &:hover {
+            background: transparent;
+            color: $btnBg;
+            border: 10px solid $btnBg;
+        }
+    }
+}
