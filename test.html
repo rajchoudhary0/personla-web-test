@@ -198,91 +198,6 @@ body{
 }
 
 
-.wrap{
-
-}
-
-.table{
-	display: grid;
-	grid-template-rows: auto repeat(5, 1fr);
-	row-gap: 5px;
-	width: 80%;
-	margin: 50px auto;
-	overflow-x: auto;
-	border: 1px solid #e9e9e9;
-	box-shadow: 5px 5px 10px #52525248;
-}
-.row{
-	display: grid;
-	grid-template-columns: 100px 100px 200px 100px auto;
-	background-color: #fff;
-	box-shadow: 4px 4px 2px #5a5a5a4f;
-	align-items: center;
-	justify-items: center;
-	column-gap: 10px;
-	padding: 0 20px;
-}
-.item{
-	padding:1rem;
-	font-weight: 600;
-}
-
-.head .item{
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 1rem;
-	letter-spacing: 2px;
-}
-.head{
-	background-color: #1D252C;
-    color: #E7E7E6;
-}
-.item img{
-	height: 64px;
-	max-width: 150px;
-	border-radius: 4px;
-}
-.row .detail{
-	font-size: 1.1rem;
-	font-weight: 600;
-	text-align: justify;
-	padding-left: 2rem; 
-	color: #1D252C;
-}
-.detail-head{
-	justify-self: baseline;
-	padding-left: 2rem;
-}
-.brand{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-
-}
-.brand-name{
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 600;
-}
-.fa-star.yellow{
-	color: #ddc228;
-}
-.brand-content{
-	text-align: center;
-}
-.fa-angles-up{
-	color: #57ec1d;
-}
-.fa-angles-down{
-	color: #ec1d1d;
-}
-.rank{
-	background-color: #1D252C;
-    color: #E7E7E6;
-	border-radius: 4px;
-}
 </style>
 	<body>
 		<!-- <div class="main">
@@ -297,18 +212,18 @@ body{
             </div>
         </div> -->
 		<div class="wrap">
-			<div class="table">
-				<div class="row head">
-					<div class="item">Rank</div>
-					<div class="item">Change</div>
-					<div class="item">Brand</div>
-					<div class="item">Category</div>
-					<div class="item detail-head">Details</div>
+			<div class="main-table">
+				<div class="table-row main-head">
+					<div class="list-item">Rank</div>
+					<div class="list-item">Change</div>
+					<div class="list-item">Brand</div>
+					<div class="list-item">Category</div>
+					<div class="list-item detail-head">Details</div>
 				</div>
-				<div class="row">
-					<div class="item rank">1</div>
-					<div class="item">--</div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">1</div>
+					<div class="list-item">--</div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/Luv_Me_Hair_kkbs6w.png"
 							alt="" srcset="">
 						<div class="brand-content">
@@ -322,16 +237,16 @@ body{
 							</div>
 						</div>
 					</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">2</div>
-					<div class="item">--</div>
-					<div class="item brand">
+				<div class="table-row">
+					<div class="list-item table-rank">2</div>
+					<div class="list-item">--</div>
+					<div class="list-item main-brand">
 						<img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/lily_and_fox_ncykjc.png"
 							alt="" srcset="">
@@ -346,16 +261,16 @@ body{
 								</div>
 							</div>
 					</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">3</div>
-					<div class="item">1 <i class="fa-solid fa-angles-down"></i></div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">3</div>
+					<div class="list-item">1 <i class="fa-solid fa-angles-down"></i></div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609146/bluebird%20logos/kosas_rohvuv.jpg"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -369,16 +284,16 @@ body{
 								</div>
 							</div>
 						</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">4</div>
-					<div class="item">2 <i class="fa-solid fa-angles-up"></i></div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">4</div>
+					<div class="list-item">2 <i class="fa-solid fa-angles-up"></i></div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609145/bluebird%20logos/k18_logo_jda2jx.webp"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -392,16 +307,16 @@ body{
 								</div>
 							</div>
 						</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">5</div>
-					<div class="item">--</div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">5</div>
+					<div class="list-item">--</div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/elta_md_tix5i5.svg"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -415,16 +330,16 @@ body{
 								</div>
 							</div>
 						</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">6</div>
-					<div class="item">-</div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">6</div>
+					<div class="list-item">-</div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/haus_labs_unnrg5.jpg"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -438,16 +353,16 @@ body{
 								</div>
 							</div>
 					</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">7</div>
-					<div class="item">-</div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">7</div>
+					<div class="list-item">-</div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/Fenty_Beauty_lcmgky.jpg"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -461,16 +376,16 @@ body{
 								</div>
 							</div>
 						</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
 				</div>
-				<div class="row">
-					<div class="item rank">8</div>
-					<div class="item">-</div>
-					<div class="item brand"><img
+				<div class="table-row">
+					<div class="list-item table-rank">8</div>
+					<div class="list-item">-</div>
+					<div class="list-item main-brand"><img
 							src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/sol_de_janeiro_hps9ft.png"
 							alt="" srcset="">
 							<div class="brand-content">
@@ -484,8 +399,8 @@ body{
 								</div>
 							</div>
 						</div>
-					<div class="item">BEAUTY</div>
-					<div class="item detail">Lorem ipsum dolor sit amet consectetur adipisicing
+					<div class="list-item">BEAUTY</div>
+					<div class="list-item item-detail">Lorem ipsum dolor sit amet consectetur adipisicing
 						elit. Totam quisquam atque vel dolor illum quia consequatur ullam quasi
 						reiciendis officia nobis reprehenderit necessitatibus, perferendis,
 						dignissimos exercitationem id facere sunt ut.</div>
@@ -499,6 +414,22 @@ body{
 			<img src="img/3.png" alt="" srcset="">
 			<img src="img/4.png" alt="" srcset="">
 			<img src="img/5.png" alt="" srcset="">
+		</div>
+
+		<div class="high-grow">
+			<div class="grow-box">
+				<h2 class="box-title">$91.41BN</h2>
+				<p class="box-content">Projected revenue in Beauty & Personal Care market in 2023, with largest segment Personal Care with a volume of US$42.18bn. (via Statista)</p>
+			</div>
+			<div class="grow-box">
+				<h2 class="box-title">$91.41BN</h2>
+				<p class="box-content">Projected revenue in Beauty & Personal Care market in 2023, with largest segment Personal Care with a volume of US$42.18bn. (via Statista)</p>
+			</div>
+		</div>
+		<div class="sub-box">
+			<p>
+				Helping retailers identify unique category growth opportunities through a presentation of in-demand digitally native brands.
+			</p>
 		</div>
 	</body>
 </html>
