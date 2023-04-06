@@ -747,10 +747,11 @@ footer p {
     color: #E7E7E6;
 }
 .list-item img{
-	height: 48px;
+	max-height: 48px;
 	max-width: 120px;
 	border-radius: 4px;
 }
+
 .table-row .item-detail{
 	font-size: 0.9rem;
 	font-weight: 400;
@@ -774,8 +775,9 @@ footer p {
 }
 .brand-name{
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-weight: 600;
+    font-size: 0.8rem;
 }
 .fa-star.yellow{
 	color: #ddc228;
@@ -785,6 +787,8 @@ footer p {
 }
 .brand-content{
 	text-align: center;
+    text-decoration: none;
+    color: #0B151C;
 }
 .fa-angles-up{
 	color: #57ec1d;
@@ -800,19 +804,20 @@ footer p {
 	border-radius: 4px;
 }
 .main-brand ~ .list-item:nth-child(4){
-    font-size: 12px;
+    font-size: 10px;
 }
 
+.red{
+    color:red;
+}
 
+.green{
+    color:green;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.yellow{
+    color:yellow;
+}
+.good-green{
+    color:#80ce1a
+}
