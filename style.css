@@ -663,9 +663,11 @@ footer p {
 
 .high-grow {
     display: flex;
-    padding: 2rem;
+    padding: 4rem;
     gap: 1rem;
     justify-content: center;
+    background-color: #fff;
+    margin: 2rem auto
 }
 
 .grow-box {
@@ -800,3 +802,17 @@ footer p {
 .main-brand ~ .list-item:nth-child(4){
     font-size: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
