@@ -819,6 +819,7 @@ footer p {
 
 .main-brand~.list-item:nth-child(4) {
     font-size: 10px;
+    text-transform: uppercase;
 }
 
 .red {
@@ -840,11 +841,12 @@ footer p {
 .btn-detail {
     padding: 4px 10px;
     border: none;
-    background-color: #1D252C;
-    color: #fff;
+    color: #1D252C;
     border-radius: 4px;
     display: none;
     font-size: 12px;
+    border: 1px solid #1D252C;
+    background-color: transparent;
 }
 
 .btn-close {
@@ -865,11 +867,7 @@ footer p {
         width: 13%;
     }
 
-    .table-row {
-        grid-template-columns: 26px 36px 72px 84px 46px;
-        column-gap: 12px;
-        padding: 0px 10px;
-    }
+    
 
     .main-head .list-item {
         font-size: 10px;
@@ -903,8 +901,18 @@ footer p {
     }
 
     .star-rating {
-        display: flex;
+        display: none;
         justify-content: center;
+    }
+
+    .main-head > .list-item:nth-child(4), .main-brand~.list-item:nth-child(4) {
+        display: none;
+    }
+
+    .table-row {
+        grid-template-columns: 50px 50px 120px 100px;
+        column-gap: 14px;
+        padding: 10px 10px;
     }
 
     .btn-detail {
@@ -925,7 +933,6 @@ footer p {
         width: 80%;
         margin: 50% auto;
     }
-
     
 }
 
