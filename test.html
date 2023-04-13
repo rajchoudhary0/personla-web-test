@@ -2287,4 +2287,21 @@ body{
 	  }
 	}); 
 	</script> -->
+
+	<!-- <script>
+		var form = document.querySelector('#your-form-id'); // Replace with the ID of your form
+		var emailInput = form.querySelector('input[name="email"]'); // Replace with the name of your email input field
+		var blockedDomains = ['example.com', 'anotherdomain.com']; // Add the domains you want to block to this array
+	
+		form.addEventListener('submit', function(e) {
+			var email = emailInput.value;
+			var domain = email.split('@')[1];
+			if (blockedDomains.includes(domain)) {
+				alert('Sorry, this domain is not allowed. Please use a different email address.');
+				e.preventDefault();
+			}
+		});
+	</script> -->
+
+
 	</html>
