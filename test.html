@@ -199,6 +199,35 @@ body{
 }
 
 
+.slider1 {
+    width: 100%;
+    overflow: hidden;
+  background: #fff;
+  height:150px;
+}
+.slider1 ul {
+    display: flex;
+    padding: 0;
+    animation: cambio 20s infinite linear alternate;
+  align-items:center;
+  gap:50px;
+}
+.slider1 li {
+    list-style: none;
+}
+.slider1 img {
+  max-width: 100px !important;
+  height:80%;
+  mix-blend-mode:color-burn;
+  object-fit:contain;
+  pointer-events:none;
+  border-radius:20px;
+}
+@keyframes cambio {
+   0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-200px * 7))}
+}
+
 </style>
 	<body>
 		<!-- <div class="main">
@@ -212,6 +241,54 @@ body{
                 <div>L</div>
             </div>
         </div> -->
+
+		<div class="slider1">
+			<ul>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/drmtlgy_mxpbhs.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/Fenty_Beauty_lcmgky.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/sol_de_janeiro_hps9ft.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/beachwaver_bp0qrn.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609142/bluebird%20logos/athletic_greens_pgrycd.avif" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609142/bluebird%20logos/spoiled_child_oplxyq.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609141/bluebird%20logos/supergoop_m8mhko.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609139/bluebird%20logos/moonjuice_ywnomj.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609139/bluebird%20logos/my_protein_pgy2iw.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609142/bluebird%20logos/t3_logo_qjwmlp.png" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/amika_m21o6m.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609143/bluebird%20logos/coco_and_eve_fje1py.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609144/bluebird%20logos/branch_basics_g4zxpe.jpg" alt="">
+				</li>
+				<li>
+					<img src="https://res.cloudinary.com/dlxtkvpts/image/upload/v1679609145/bluebird%20logos/heart_and_soil_ny0gpf.jpg" alt="">
+				</li>
+			</ul>
+			</div>
+		
 		<div class="wrap">
 			<div class="main-table">
 				<div class="table-row main-head">
@@ -2179,5 +2256,35 @@ body{
 		// 	const modals = document.querySelectorAll(".overlay");
 		// 	modals.forEach((modal) => modal.style.display = "none");
 		// });
+	</script>
+
+	
+<script>
+	window.addEventListener('load', function() {
+	const form = document.querySelector('form[data-form-id="6436ee0123e1b4107b634ec7"]');
+	form.addEventListener('submit', function(event) {
+	  if (form.checkValidity()) {
+		localStorage.setItem('formSubmitted', true);
+		console.log('formSubmitted set to true');
+	  }else {
+		console.log('form not valid');
+	  }
+	});
+	  });
+	</script>
+	
+	<script>
+	 window.addEventListener('DOMContentLoaded', function() {
+	  const formSubmitted = localStorage.getItem('formSubmitted');
+	   console.log('formSubmitted:', formSubmitted);
+	  if (!formSubmitted) {
+		// If the form has not been submitted, redirect the user to the form page
+		window.location.href = '/retail-report-signup';
+	  } else {
+		// If the form has been submitted, remove the 'formSubmitted' key from localStorage
+		localStorage.removeItem('formSubmitted');
+		console.log('formSubmitted removed from localStorage');
+	  }
+	}); 
 	</script>
 	</html>
