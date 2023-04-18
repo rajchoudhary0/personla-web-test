@@ -139,3 +139,41 @@ let mm = new MagnetMouse({
 //     // console.log("------------------------------------")
 // })
 
+
+
+
+// const form = document.querySelector('form[data-form-id="6436ee0123e1b4107b634ec7"]');
+// const submitButton = form.querySelector('input[type="submit"]');
+// submitButton.addEventListener('click', function(e) {
+
+//     var emailInput = form.querySelector('input[name="email"]');
+//     var fname = form.querySelector('input[name="fname"]').value; // Replace with the name of your email input field
+//     var lname = form.querySelector('input[name="lname"]').value;
+//     var allowedDomains = ['thebluebirdgrp.com', 'target.com','walmart.com','costco.com','bestbuy.com','samsclub.com']; // Add the domains you want to allow to this array
+//     var modal = document.querySelector(".modal");
+//     var modal1 = document.querySelector(".modal1");
+//     var email1 = emailInput.value;
+//     var closeButton = document.querySelector(".close-button");
+
+
+//   if(fname === "" || lname === "" || email1 === "" ){
+//     modal1.classList.toggle("show-modal1");
+//     e.preventDefault();
+//   } else {  
+//     var email = emailInput.value;
+//     var domain = email.split('@')[1];
+//     if (!allowedDomains.includes(domain)) {
+//       modal.classList.toggle("show-modal");
+//       e.preventDefault(); // Prevent the form from submitting if the email domain is not allowed
+//     } else {
+//       if (form.checkValidity()) {
+//         localStorage.setItem('formSubmitted', true);
+//         console.log('formSubmitted set to true');
+//         // Add any additional code to be executed on form submission here
+//       } else {
+//         console.log('form not valid');
+//         e.preventDefault(); // Prevent the form from submitting if it is not valid
+//       }
+//     }
+//   }
+// });
