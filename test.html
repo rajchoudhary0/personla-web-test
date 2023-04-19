@@ -2173,9 +2173,34 @@ body{
 					</div>
 				</div>
 			</div>
-		</div>
-		</div>
 
+		</div>
+		</div>
+		<button class="see-more">See More</button>
+
+<script>
+
+const container = document.querySelector('.main-table');
+    const children = container.children;
+	const btn = document.querySelector('.see-more');
+
+
+	btn.addEventListener("click", function(){
+		if(btn.innerHTML == "See More"){
+			for (let i = 11; i < children.length && i < 51; i++) {
+       		 children[i].style.display = 'grid';
+			}
+			btn.innerHTML = "See Less";
+		}else if(btn.innerHTML == "See Less"){
+		for (let i = 11; i < children.length && i < 51; i++) {
+        children[i].style.display = 'none';
+    }
+	btn.innerHTML = "See More";
+	}
+	})
+
+
+</script>
 			<div class="icon">
 				<img src="img/1.png" alt="" srcset="">
 				<img src="img/2.png" alt="" srcset="">

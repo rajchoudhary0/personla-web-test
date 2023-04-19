@@ -720,6 +720,7 @@ footer p {
     overflow-x: auto;
     border: 1px solid #e9e9e9;
     box-shadow: 5px 5px 10px #52525248;
+    transition: 1s ease-in-out;
 }
 
 .table-row {
@@ -731,7 +732,29 @@ footer p {
     justify-items: center;
     column-gap: 10px;
     padding: 0 20px;
+    transition: 1s ease-in-out;
+
 }
+
+.main-table > .table-row:nth-child(n+12):nth-child(-n+51) {
+    display: none;
+    transition: 1s ease-in-out;
+  }
+
+  .see-more{
+    border: none;
+    padding: 16px 34px;
+    background: #1c74d8;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out All;
+  }
+
+  .see-more:hover{
+    transform: scale(1.1);
+  }
 
 .list-item {
     padding: 1rem;
@@ -857,7 +880,9 @@ footer p {
     border-radius: 4px;
     font-size: 12px;
 }
-
+.star-rating{
+    display: none;
+}
 @media screen and (max-width:768px) {
     .high-grow {
         flex-wrap: wrap
