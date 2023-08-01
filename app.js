@@ -177,3 +177,37 @@ let mm = new MagnetMouse({
 //     }
 //   }
 // });
+
+
+{/* <script>
+	window.addEventListener('DOMContentLoaded', function() {
+	 const formSubmitted = localStorage.getItem('formSubmitted');
+	  console.log('formSubmitted:', formSubmitted);
+	 if (!formSubmitted) {
+	   // If the form has not been submitted, redirect the user to the form page
+	   window.location.href = '/brandbrief-signup';
+	 } else {
+	   // If the form has been submitted, remove the 'formSubmitted' key from localStorage
+	   // localStorage.removeItem('formSubmitted');
+	   console.log('Form Already submitted');
+	 }
+   }); 
+   </script> */}
+
+  //  <script>
+	// window.addEventListener('DOMContentLoaded', function() {
+	//  const formSubmitted = localStorage.getItem('formSubmitted');
+	//   console.log('formSubmitted:', formSubmitted);
+	//  if (!formSubmitted) {
+	//    // If the form has not been submitted, redirect the user to the form page
+	//    window.location.href = '/brandbrief-signup';
+	//  } else {
+	//    // If the form has been submitted, remove the 'formSubmitted' key from localStorage
+	//    // localStorage.removeItem('formSubmitted');
+	//    console.log('Form Already submitted');
+	//  }
+  //  }); 
+  
+  
+  //  </script>
+
